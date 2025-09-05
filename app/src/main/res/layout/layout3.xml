@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign up"
-        android:textColor="#0FA7EB"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:layout_marginTop="100dp" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
 
-        android:src="@drawable/hill"
-
-        />
+        app:srcCompat="@drawable/password" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -39,6 +25,7 @@
         android:minHeight="48dp"
         android:textColorHint="#2080CE"
         android:padding="15dp"
+        android:layout_below="@id/imageView2"
         android:layout_marginTop="20dp" />
 
     <EditText
@@ -50,14 +37,10 @@
         android:minHeight="48dp"
         android:textColorHint="#109FE0"
         android:padding="15dp"
+        android:layout_below="@id/editTextEmail"
         android:layout_marginTop="10dp" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#0FA7EB"
-        android:textColor="#FFFFFF"/>
 
 
-</LinearLayout>
+
+</RelativeLayout>
+
